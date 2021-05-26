@@ -15,8 +15,11 @@ export default function Home() {
         <p>I'm Zahnen and I'm a baby developer.</p>
       </section>
       <ProjectCard projectInfo="Guestly" projectURL="/images/GuestlyLogo.svg" />
-      <ProjectCard projectInfo="Guestly" projectURL="/images/GuestlyLogo.svg" />
-      <ProjectCard projectInfo="Guestly" projectURL="/images/GuestlyLogo.svg" />
+      <ProjectCard
+        projectInfo="Sous Chef"
+        projectURL="/images/SousChefLogo.svg"
+      />
+      <ProjectCard projectInfo="Paro" projectURL="/images/ParoLogo.svg" />
     </Layout>
   );
 }
