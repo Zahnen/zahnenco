@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import Navbar from "../components/navbar";
+import ProjectCard from "../components/projectCard";
 import utilStyles from "../styles/utils.module.css";
 
 export default function Home() {
@@ -13,6 +14,9 @@ export default function Home() {
       <section className={utilStyles.headingMd}>
         <p>I'm Zahnen and I'm a baby developer.</p>
       </section>
+      <ProjectCard projectInfo="Guestly" projectURL="/images/GuestlyLogo.svg" />
+      <ProjectCard projectInfo="Guestly" projectURL="/images/GuestlyLogo.svg" />
+      <ProjectCard projectInfo="Guestly" projectURL="/images/GuestlyLogo.svg" />
     </Layout>
   );
 }
