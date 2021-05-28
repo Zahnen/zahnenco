@@ -8,6 +8,7 @@
   margin-bottom: 20px;
   margin: 0 10px;
   color: black;
+  cursor: pointer;
 }
 .projectImage {
   position: absolute;
@@ -20,7 +21,7 @@
 .projectInfo {
   position: absolute;
   font-size: 14px;
-  bottom: 0;
+  margin-top: 60px;
   left: 0;
   z-index: 2;
   width: 100%;
