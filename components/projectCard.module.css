@@ -9,6 +9,7 @@
   margin: 0 10px;
   color: black;
   cursor: pointer;
+  text-align: left;
 }
 .projectImage {
   position: absolute;
