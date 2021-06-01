@@ -11,8 +11,12 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <Navbar />
-      <section className={utilStyles.headingMd}>
-        <p>and I'm a developer.</p>
+      <section>
+        I'm a web developer based in Portland, Oregon. I enjoy working
+        collaboratively to bring ideas to life in digital spaces. In blending
+        development skills with my background in marketing & hospitality, I hope
+        to use my talents to deliver best-in-class work in a client-focused
+        environment.
       </section>
       <ProjectCard
         projectInfo="Curo is a project management tool for crafters on the cusp of entrepreneurship. Curo offers kanban-style task management, cost-tracking, and financial analysis tools to help users refine their process and stay organized."
