@@ -1,17 +1,9 @@
-import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
-import Navbar from "../components/navbar";
-import ProjectCard from "../components/projectCard";
-import utilStyles from "../styles/utils.module.css";
+import Layout from "../components/Layout/layout";
 
 export default function Contact() {
   return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <Navbar />
-      <section className={utilStyles.headingMd}>
+    <Layout>
+      <section>
         <p>Contact me</p>
       </section>
     </Layout>
