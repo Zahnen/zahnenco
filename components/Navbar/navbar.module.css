@@ -1,43 +1,4 @@
-html,
-body {
-  font-family: "Monument", serif;
-  line-height: 1.6;
-  font-size: 24px;
-  background-color: #fef3e4;
-}
-html {
-  overflow-y: scroll;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-@font-face {
-  font-family: "Monument";
-  src: url("../public/fonts/MonumentExtended-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: "RightGrotesk";
-  src: url("../public/fonts/RightGrotesk-WideMedium.woff") format("woff");
-  font-weight: bold;
-}
-
-.nav-bar {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -50,7 +11,7 @@ img {
   transition: transform 0.2s ease-in-out;
 }
 
-.nav-bar.hidden {
+.navbarhidden {
   position: fixed;
   top: 0;
   left: 0;
@@ -63,7 +24,7 @@ img {
   transition: transform 0.2s ease-in-out;
 }
 
-.nav-list {
+.navlist {
   position: sticky;
   align-items: center;
   display: flex;
@@ -71,7 +32,7 @@ img {
   width: 100%;
 }
 
-.nav-item {
+.navitem {
   list-style: none;
   display: block;
   margin-right: 50px;
@@ -80,12 +41,12 @@ img {
   padding: 20px 20px;
 }
 
-.nav-a {
+.navlink {
   color: black;
   text-decoration: none;
 }
 
-.nav-a:hover {
+.navlink:hover {
   text-decoration: underline;
   color: black;
   cursor: pointer;
