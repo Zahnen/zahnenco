@@ -1,0 +1,98 @@
+html,
+body {
+  font-family: "Sohne", sans-serif;
+  line-height: 1.6;
+  font-size: 24px;
+  background-color: #fef3e4;
+}
+html {
+  overflow-y: scroll;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@font-face {
+  font-family: "Sohne";
+  src: url("../public/fonts/Sohne-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Sohne";
+  src: url("/fonts/Sohne-Bold.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Sohne";
+  src: url("/fonts/Sohne-Italic.woff") format("woff");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Sohne";
+  src: url("/fonts/Sohne-Bold-Italic.woff") format("woff");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Sohne Breit";
+  src: url("/fonts/SohneBreit-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Sohne Breit";
+  src: url("/fonts/SohneBreit-Bold.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Sohne Breit";
+  src: url("/fonts/SohneBreit-Italic.woff") format("woff");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Sohne Breit";
+  src: url("/fonts/SohneBreit-Bold-Italic.woff") format("woff");
+  font-style: italic;
+  font-weight: bold;
+}
+
+.about {
+  font-family: "Sohne Breit", sans-serif;
+  .name-container {
+    height: 100vh;
+    width: calc(100vw - 50px);
+    margin-top: -65px;
+  }
+  h1 {
+    padding: 0;
+    text-align: right;
+    margin: 0 50px 0 10px;
+    font-weight: bold;
+    font-size: 96px;
+    @media screen and (max-width: 768px) {
+      font-size: 48px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: calc(96px + 120 * ((100vw - 768px) / 672));
+    }
+    @media screen and (min-width: 1440px) {
+      font-size: 216px;
+    }
+  }
+  p {
+    font-size: 36px;
+  }
+}

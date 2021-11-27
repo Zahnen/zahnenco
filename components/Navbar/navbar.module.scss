@@ -1,0 +1,38 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: "Sohne Breit", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 65px;
+  transform: translateY(0);
+  transition: transform 0.2s ease-in-out;
+  &.hidden {
+    transform: translateY(-100%);
+  }
+}
+
+.hidden {
+  transform: translateY(-100%) !important;
+}
+
+.navitem {
+  list-style: none;
+  display: inline-block;
+  height: 100%;
+  margin-right: 50px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  a {
+    color: black !important;
+    text-decoration: none;
+  }
+  &:hover {
+    border-bottom: 2px solid black;
+  }
+}

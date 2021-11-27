@@ -2,7 +2,7 @@ import Layout from "../../components/Layout/layout";
 import ProjectCard from "../../components/ProjectCard/projectCard";
 import { Client } from "../../utils/prismicHelpers";
 import Prismic from "@prismicio/client";
-import styles from "./projectpage.module.css";
+import styles from "./projectpage.module.scss";
 
 export default function Projects({ projects }) {
   return (

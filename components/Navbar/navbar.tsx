@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import styles from "./navbar.module.css";
+import styles from "./navbar.module.scss";
 
 const NavBar = () => {
-  const [header, setHeader] = useState("navbar");
+  const [header, setHeader] = useState(true);
 
   const listenScrollEvent = () => {
-    if (window.scrollY < 300) {
-      return setHeader("navbar");
-    } else if (window.scrollY > 300) {
-      return setHeader("navbar hidden");
+    if (window.scrollY < 200) {
+      return setHeader(true);
+    } else if (window.scrollY > 200) {
+      return setHeader(false);
     }
   };
 
@@ -21,27 +21,25 @@ const NavBar = () => {
 
   return (
     <>
-      <div className={header == "navbar" ? styles.navbar : styles.navbarhidden}>
+      <div
+        className={
+          header == true ? styles.navbar : `${styles.navbar} ${styles.hidden}`
+        }
+      >
         <ul className={styles.navlist}>
           <Link href="/">
             <li className={styles.navitem}>
-              <a className={styles.navlink}>
-                <b>About</b>
-              </a>
+              <a className={styles.navlink}>About</a>
             </li>
           </Link>
           <Link href="/projects">
             <li className={styles.navitem}>
-              <a className={styles.navlink}>
-                <b>Projects</b>
-              </a>
+              <a className={styles.navlink}>Projects</a>
             </li>
           </Link>
           <Link href="/contact">
             <li className={styles.navitem}>
-              <a className={styles.navlink}>
-                <b>Contact</b>
-              </a>
+              <a className={styles.navlink}>Contact</a>
             </li>
           </Link>
         </ul>
