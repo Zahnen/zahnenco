@@ -3,13 +3,19 @@ import Layout from "../components/Layout/layout";
 export default function Home() {
   return (
     <Layout>
-      <section>
-        I'm a web developer based in Portland, Oregon. I enjoy working
-        collaboratively to bring ideas to life in digital spaces. In blending
-        development skills with my background in marketing & hospitality, I hope
-        to use my talents to deliver best-in-class work in a client-focused
-        environment.
-      </section>
+      <div className="about">
+        <div className="name-container">
+          <h1>Zahnen</h1>
+          <h1>Garner</h1>
+        </div>
+        <p>
+          is a web developer based in Portland, Oregon. He enjoys working
+          collaboratively to bring ideas to life in digital spaces. In blending
+          development skills with a background in marketing and hospitality, he
+          hopes to use his talents to deliver best-in-class work in
+          client-focused environments.
+        </p>
+      </div>
     </Layout>
   );
 }
