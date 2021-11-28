@@ -3,7 +3,8 @@
   top: 0;
   left: 0;
   font-family: "Sohne Breit", sans-serif;
-  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 4px;
   font-size: 32px;
   display: flex;
   align-items: center;
@@ -12,6 +13,8 @@
   height: 65px;
   transform: translateY(0);
   transition: transform 0.2s ease-in-out;
+  text-transform: lowercase;
+  z-index: 100;
   &.hidden {
     transform: translateY(-100%);
   }

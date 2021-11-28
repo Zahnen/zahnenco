@@ -6,16 +6,15 @@ import Prismic from "@prismicio/client";
 const ProjectPage = ({ project }) => {
   const { name, logo, description, repourl, deployurl, demo_images } =
     project.data || null;
-  console.log(description);
   return (
     <Layout>
-      <h1>{name[0].text}</h1>
-      <p>{description[0].text}</p>
-      <h2>
-        <Link href="/">
-          <a>Back to home</a>
+      <>
+        <h1>{name[0].text}</h1>
+        <p>{description[0].text}</p>
+        <Link href="/projects">
+          <a>Back to projects</a>
         </Link>
-      </h2>
+      </>
     </Layout>
   );
 };

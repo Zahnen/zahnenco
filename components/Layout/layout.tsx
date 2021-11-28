@@ -24,12 +24,12 @@ export default function Layout({ children }) {
             <object
               type="image/svg+xml"
               data="/images/connect.svg"
-              height={200}
-              width={200}
+              height={400}
+              width={400}
             />
           </>
         </header>
-        <main>{children}</main>
+        <div className={styles.main}>{children}</div>
       </div>
     </>
   );
